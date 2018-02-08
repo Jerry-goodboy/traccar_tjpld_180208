@@ -7,7 +7,7 @@
     <!-- SERVER CONFIG -->
 
     <entry key='web.enable'>true</entry>
-    <entry key='web.port'>8082</entry>
+    <entry key='web.port'>9090</entry>
     <entry key='web.path'>./web</entry>
     <entry key='web.cacheControl'>max-age=3600,public</entry>
 
@@ -65,6 +65,10 @@
     <entry key='database.selectStatistics'>
         SELECT * FROM statistics WHERE captureTime BETWEEN :from AND :to ORDER BY captureTime
     </entry>
+
+    <!-- PROTOCOL CUSTOM -->
+
+    <entry key='gprscdma.port'>6688</entry>
 
     <!-- PROTOCOL CONFIG -->
 
