@@ -81,13 +81,13 @@
       <column name="coordinateformat" type="VARCHAR(128)" />
     </addColumn>
 
-    <dropNotNullConstraint tableName="positions" columnName="attributes" columnDataType="VARCHAR(4096)" />
+    <dropNotNullConstraint tableName="positions" columnName="attributes" columnDataType="VARCHAR(4000)" />
     <modifyDataType tableName="positions" columnName="attributes" newDataType="VARCHAR(4000)" />
-    <dropNotNullConstraint tableName="events" columnName="attributes" columnDataType="VARCHAR(4096)" />
+    <dropNotNullConstraint tableName="events" columnName="attributes" columnDataType="VARCHAR(4000)" />
     <modifyDataType tableName="events" columnName="attributes" newDataType="VARCHAR(4000)" />
-    <dropNotNullConstraint tableName="geofences" columnName="attributes" columnDataType="VARCHAR(4096)" />
+    <dropNotNullConstraint tableName="geofences" columnName="attributes" columnDataType="VARCHAR(4000)" />
     <modifyDataType tableName="geofences" columnName="attributes" newDataType="VARCHAR(4000)" />
-    <dropNotNullConstraint tableName="notifications" columnName="attributes" columnDataType="VARCHAR(4096)" />
+    <dropNotNullConstraint tableName="notifications" columnName="attributes" columnDataType="VARCHAR(4000)" />
     <modifyDataType tableName="notifications" columnName="attributes" newDataType="VARCHAR(4000)" />
     <modifyDataType tableName="users" columnName="attributes" newDataType="VARCHAR(4000)" />
     <modifyDataType tableName="devices" columnName="attributes" newDataType="VARCHAR(4000)" />

@@ -27,7 +27,7 @@
       <column name="deviceid" type="INT" />
       <column name="positionid" type="INT" />
       <column name="geofenceid" type="INT" />
-      <column name="attributes" type="VARCHAR(4096)">
+      <column name="attributes" type="VARCHAR(4000)">
         <constraints nullable="false" />
       </column>
     </createTable>
@@ -46,10 +46,10 @@
         <constraints nullable="false" />
       </column>
       <column name="description" type="VARCHAR(128)" />
-      <column name="area" type="VARCHAR(4096)">
+      <column name="area" type="VARCHAR(4000)">
         <constraints nullable="false" />
       </column>
-      <column name="attributes" type="VARCHAR(4096)">
+      <column name="attributes" type="VARCHAR(4000)">
         <constraints nullable="false" />
       </column>
     </createTable>
@@ -100,7 +100,7 @@
       <column name="type" type="VARCHAR(128)">
         <constraints nullable="false" />
       </column>
-      <column name="attributes" type="VARCHAR(4096)">
+      <column name="attributes" type="VARCHAR(4000)">
         <constraints nullable="false" />
       </column>
     </createTable>
@@ -108,7 +108,7 @@
     <addForeignKeyConstraint baseTableName="notifications" baseColumnNames="userid" constraintName="fk_notifications_userid" referencedTableName="users" referencedColumnNames="id" onDelete="CASCADE" />
 
     <addColumn tableName="users">
-      <column name="attributes" type="VARCHAR(4096)" />
+      <column name="attributes" type="VARCHAR(4000)" />
     </addColumn>
 
   </changeSet>

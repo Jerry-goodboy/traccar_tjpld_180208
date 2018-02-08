@@ -130,7 +130,7 @@
         <constraints nullable="false" />
       </column>
       <column name="address" type="VARCHAR(512)" />
-      <column name="attributes" type="VARCHAR(4096)">
+      <column name="attributes" type="VARCHAR(4000)">
         <constraints nullable="false" />
       </column>
     </createTable>

@@ -119,7 +119,7 @@ public class DataManager {
             hikariConfig.setJdbcUrl(config.getString("database.url"));
             hikariConfig.setUsername(config.getString("database.user"));
             hikariConfig.setPassword(config.getString("database.password"));
-            hikariConfig.setConnectionInitSql(config.getString("database.checkConnection", "SELECT 1"));
+            hikariConfig.setConnectionInitSql(config.getString("database.checkConnection", "SELECT 1 from dual"));
             hikariConfig.setIdleTimeout(600000);
 
             int maxPoolSize = config.getInteger("database.maxPoolSize");

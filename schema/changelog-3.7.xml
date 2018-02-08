@@ -17,11 +17,11 @@
 
     <update tableName="groups">
       <column name="groupid"/>
-      <where>groupid NOT IN (SELECT id FROM (SELECT DISTINCT id FROM groups) AS groups_ids)</where>
+      <where>groupid NOT IN (SELECT id FROM (SELECT DISTINCT id FROM groups) groups_ids)</where>
     </update>
 
     <addColumn tableName="devices">
-      <column name="attributes" type="VARCHAR(4096)" />
+      <column name="attributes" type="VARCHAR(4000)" />
     </addColumn>
 
     <dropColumn tableName="devices" columnName="motion" />
@@ -29,11 +29,11 @@
     <dropColumn tableName="devices" columnName="status" />
 
     <addColumn tableName="groups">
-      <column name="attributes" type="VARCHAR(4096)" />
+      <column name="attributes" type="VARCHAR(4000)" />
     </addColumn>
 
     <addColumn tableName="server">
-      <column name="attributes" type="VARCHAR(4096)" />
+      <column name="attributes" type="VARCHAR(4000)" />
     </addColumn>
 
   </changeSet>
