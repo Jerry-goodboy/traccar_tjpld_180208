@@ -16,6 +16,8 @@
 ### 5. ORA-00910: specified length too long for its datatype
     将 D:\IdeaProjects\traccar\schema\ 文件夹下的 文件 中的 字段大小 设置为 小于 4000 或者 小于 2000 均可
     
+### 6. ORA-00001: unique constraint （IDX_CARTON_HEADER）violated
+    将 devices 表中的 uniqueid 冲突的 那一条 记录 删掉 即可
 
     
     
